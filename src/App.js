@@ -1,11 +1,14 @@
-import './App.css';
+import React from 'react';
+import Form from './FormLog/Form';
+import Header from './Header';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      Vixou
-    </div>
+    <>
+      <Header/>
+      <Form campo1="E-mail" campo2="Senha"/>
+    </>
   );
-}
+};
 
 export default App;
