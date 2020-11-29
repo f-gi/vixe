@@ -1,13 +1,17 @@
 import React from 'react';
-import Form from './FormLog/Form';
-import Header from './Header';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Login from './comp/Login';
+import Home from './comp/Home';
+
 
 const App = () => {
   return (
-    <>
-      <Header/>
-      <Form campo1="E-mail" campo2="Senha"/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element ={<Login/>} />
+        <Route path="home" element={<Home/>} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
